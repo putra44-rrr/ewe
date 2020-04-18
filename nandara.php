@@ -5,14 +5,14 @@ echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[92m| __\e[93mDaftar\e[92m_\e[93mAkun\e[92m_\e[93m+\e[92m_\e[93mAuto\e[92m_\e[93mClaim\e[92m_\e[93mVoucher\e[92m_\e[93mFood\e[92m_____|\n";
 echo "\e[92m| ____________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[93m-_•\e[92m________________|\n";
 echo "\e[92m| __\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mADMIN\e[92m___|\n";
-echo "\e[92m| ___\e[93mTELEGRAM\e[92m_:\e[93m@NandaraID\e[92m______________________|\n";
-echo "\e[92m| ___\e[93mGITHUB\e[92m___:\e[93mgithub.com/nandara\e[92m______________|\n";
+echo "\e[92m| ___\e[93mTELEGRAM\e[92m_:\e[93m@xxxxxx\e[92m______________________|\n";
+echo "\e[92m| ___\e[93mGITHUB\e[92m___:\e[93mxxxxxxxxxxxxx\e[92m______________|\n";
 echo "\e[92m| ___\e[93mVersion\e[92m__:\e[93mABANG\e[92m_\e[93m-\e[92m_\e[93mOJOL\e[92m_\e[93m21😷\e[92m_____________|\n";
 echo "\e[92m| ___\e[93mTime\e[92m_____:\e[93m".date('[d-m-Y] [H:i:s]')."\e[92m________|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[93mSudah Punya User Login Belum ?: ";	
+echo "\e[93mS HAYO , MAU NGOPIK LAGI YA KAMU ?: ";	
        $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "sudah")
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -23,11 +23,11 @@ $pass =  ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "nandara" || $user == "gilang" || $user == "rangga" || $user == "egi" || $user == "alfi" || $user == "ilham" || $user == "rama" || $user == "mika")
+if($user == "y" || $user == "puput" || $user == "pahrudin" || $user == "nganu" || $user == "alfi" || $user == "ilham" || $user == "rama" || $user == "mika")
 {
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	echo "\e[93mKetik Nama Anda ?: ";
+	echo "\e[93mKASIH DOA UNTUK PAHRUDIN ?: ";
 	$input = trim(fgets(STDIN));
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 		goto ulang;
@@ -39,14 +39,14 @@ else
 		echo "\e[92m[🚫]        \e[91mMasukkan User Registrasi      \e[92m [🚫]\n";
 	        echo "\e[92m[🚫]              \e[91m⚠️ WARNING ⚠️             \e[92m [🚫]\n";
 		echo "\e[92m[🚫]           \e[91mSEGERA MINTA IZIN          \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]          \e[91mTELEGRAM :@SASUKE_UCI        \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]          \e[91mTELEGRAM :@ewekewk        \e[92m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
-echo "\e[92m             (Selamat Datang $input)               \n";
+echo "\e[92m             ( PAHRUDIN $input)               \n";
 echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
@@ -90,14 +90,14 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO REDEEM TOD🎫▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("white","🔐▶️ Claim Voc CENTURY");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫SAMBIL NUNGGU , UDUT DULU🎫▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo "\n".color("white","🔐▶️ MULAI CLAIM NIH");
+        echo "\n".color("yellow","⏳▶️ BAYANGIN PAHRUDIN DULU AJA");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"CENTURY"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"KIRIMGOSEND10"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
@@ -105,8 +105,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	gocar:
-        echo "\n".color("white","🔐▶️ Claim voc MAKAN ");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("white","🔐▶️ SEKANRANG ANU ");
+        echo "\n".color("yellow","⏳▶️ EWEK ENAK YA");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -119,13 +119,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("green","🔐▶️ Message: ".$message);
         gofood:
-        echo "\n".color("white","🔐▶️ Claim voc EATLAH");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("white","🔐▶️ SEKARANG ANU LAGI");
+        echo "\n".color("yellow","⏳▶️ NGANU PEKOK");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420B"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$message);
         echo "\n".color("white","🔐▶️ Claim voc CASHBACK GOPAY 10K");
@@ -212,8 +212,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 010909 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"010909"}';
+         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 010101 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"010101"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
