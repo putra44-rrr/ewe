@@ -27,7 +27,7 @@ if($user == "y" || $user == "puput" || $user == "pahrudin" || $user == "nganu" |
 {
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	echo "\e[93mKASIH DOA UNTUK PAHRUDIN ?: ";
+	echo "\e[93mSEBUTKAN 1 NAMA HEWAN ATAU KTA2 KOTOR ?: ";
 	$input = trim(fgets(STDIN));
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 		goto ulang;
@@ -97,7 +97,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"KIRIMGOSEND10"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420A"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
@@ -135,7 +135,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(1);
         }
         sleep(3);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"JAJANHEMAT"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420A"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$messageboba09);
         sleep(3);
