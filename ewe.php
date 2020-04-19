@@ -230,7 +230,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          echo color("red","-] Otp yang anda input salah");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("yellow","!] Silahkan input kembali\n");
-         goto otp;
+         goto ulang;
          }
          }else{
          echo color("red","-] Nomor sudah teregistrasi");
