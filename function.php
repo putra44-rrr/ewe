@@ -184,7 +184,7 @@ function claims($token,$voc)
     }
     function claim2($token)
     {
-    $data = '{"promo_code":"COBAGOFOOD010420B"}';    
+    $data = '{"promo_code":"STAYGOFOOD201105SC"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -212,7 +212,7 @@ function claims($token,$voc)
     }
      function cekvocer($token)
     {
-    $data = '{"promo_code":" COBAGOFOOD010420A "}';    
+    $data = '{"promo_code":"STAYGOFOOD201105SC"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -226,7 +226,7 @@ function claims($token,$voc)
     }
      function pengen($token)
     {
-    $data = '{"promo_code":" COBAGOFOOD010420B "}';    
+    $data = '{"promo_code":"PAKEGOFOOD260520"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
