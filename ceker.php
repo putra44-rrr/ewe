@@ -1,13 +1,23 @@
 <?php
-echo color("green","[+] Token GOJEK Kamu Disini : ");
-$token = trim(fgets(STDIN));
-$secret = ''.$token.'';
-$header = array();
-$header[] = 'Content-Type: application/json';
-$header[] = 'X-AppVersion: 3.46.2';
+
+function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
+
+$header[] = "Host: api.gojekapi.com";
+$header[] = "User-Agent: okhttp/3.10.0";
+$header[] = "Accept: application/json";
+$header[] = "Accept-Language: id-ID";
+$header[] = "Content-Type: application/json; charset=UTF-8";
+$header[] = "X-AppVersion: 3.30.2";
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
-$header[] = 'X-Location: id_ID';
-  }
+$header[] = "Connection: keep-alive";
+$header[] = "X-User-Locale: id_ID";
+$header[] = "X-Location: -2.975294,104.773317";
+$header[] = "X-Location-Accuracy: 3.0";
+if ($pin):
+$header[] = "pin: $pin";
+    endif;
+if ($token):
+$header[] = "Authorization: Bearer $token";
  echo "\n".color("nevy","MAU CLAIM VOUCHER ?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
