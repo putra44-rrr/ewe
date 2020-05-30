@@ -134,36 +134,6 @@ $header[] = "Authorization: Bearer $token";
                                         curl_close($ch);
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
-         setpin:
-         echo "\n".color("purple","🔧▶️ SET PIN COY BIAR AMAN !!!: y/n ");
-         $pilih1 = trim(fgets(STDIN));
-         if($pilih1 == "y" || $pilih1 == "Y"){
-         //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 010101 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"010101"}';
-         $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp pin: ";
-         $otpsetpin = trim(fgets(STDIN));
-         $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
-         echo $verifotpsetpin;
-         }else if($pilih1 == "n" || $pilih1 == "N"){
-         die();
-         }else{
-         echo color("red","-] GAGAL!!!\n");
-         }
-         }
-         }
-         }else{
-         echo color("red","-] OTPNYA YANG BENER COY ");
-         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("yellow","!] INPUT ULANG YANG BENER COY \n");
-         goto ulang;
-         }
-         }else{
-         echo color("red","-] NOMORNYA UDAH TERDAFTAR ATAU SALAH NIH ");
-         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("yellow","!] MASUKAN NOMOR YANG BARU\n");
-         goto ulang;
          }
 //  }
 
